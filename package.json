@@ -1,24 +1,25 @@
 {
-  "name": "demos-2",
+  "name": "demos",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --no-hmr",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
   "dependencies": {
+    "@angular/cdk": "^20.1.6",
     "@angular/common": "^20.0.0",
     "@angular/compiler": "^20.0.0",
     "@angular/core": "^20.0.0",
     "@angular/forms": "^20.0.0",
+    "@angular/material": "^20.1.6",
     "@angular/platform-browser": "^20.0.0",
     "@angular/router": "^20.0.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@angular/build": "^20.0.0",
