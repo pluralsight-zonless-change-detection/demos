@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, DoCheck, inject, signal } from '@angular/core';
+import { Component, DoCheck, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { BehaviorSubject } from 'rxjs';
 import { NotificationItemComponent } from '../notification-item/notification-item';
@@ -11,7 +11,6 @@ import { Notification, NotificationService } from './notifications';
         NotificationItemComponent, 
         // AsyncPipe
     ],
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NotificationPanelComponent implements DoCheck {
     // --------------------------------------------- Before

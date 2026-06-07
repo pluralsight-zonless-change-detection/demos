@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { FooterComponent } from './footer/footer';
 import { MainContentComponent } from './main-content/main-content';
 import { ProductDetailsComponent } from './product-details/product-details';
@@ -22,7 +22,6 @@ import { SidebarComponent } from './sidebar/sidebar';
         // ProductDetailsComponent,
         // ProductToolbarComponent
     ],
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class App {
 }

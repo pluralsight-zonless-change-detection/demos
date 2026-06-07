@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
+import { Component, signal } from "@angular/core";
 
 export type Product = {
     id: number;
@@ -10,7 +10,6 @@ export type Product = {
     selector: 'app-product-toolbar',
     templateUrl: './product-toolbar.html',
     styleUrls: ['./product-toolbar.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductToolbarComponent {
     protected product = signal<Product>({

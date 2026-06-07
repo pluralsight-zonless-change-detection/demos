@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ComponentRef, OnInit, viewChild, ViewContainerRef } from '@angular/core';
+import { Component, ComponentRef, OnInit, viewChild, ViewContainerRef } from '@angular/core';
 import { ProductCardComponent } from './product-card/product-card';
 import { Product, PRODUCTS } from './product-details-data';
 import { StockBadgeComponent } from './stock-badge/stock-badge';
@@ -9,7 +9,6 @@ type WidgetType = 'card' | 'badge';
     selector: 'app-product-details',
     templateUrl: './product-details.html',
     styleUrls: ['./product-details.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductDetailsComponent implements OnInit {
     private container = viewChild.required('viewContainer', { read: ViewContainerRef });

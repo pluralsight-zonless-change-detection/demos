@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, DoCheck } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 import { NotificationPanelComponent } from '../notification-panel/notification-panel';
 import { WelcomeComponent } from '../welcome/welcome';
 
@@ -9,7 +9,6 @@ import { WelcomeComponent } from '../welcome/welcome';
         NotificationPanelComponent,
         WelcomeComponent,
     ],
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MainContentComponent implements DoCheck {
     ngDoCheck() {

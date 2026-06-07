@@ -1,6 +1,5 @@
 import { DecimalPipe } from '@angular/common';
 import {
-    ChangeDetectionStrategy,
     Component,
     DestroyRef,
     ElementRef,
@@ -15,7 +14,6 @@ import { getOrders } from './scroll-insights.data';
     selector: 'app-scroll-insights',
     templateUrl: './scroll-insights.html',
     styleUrl: './scroll-insights.scss',
-    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [DecimalPipe],
 })
 export class ScrollInsightsComponent {

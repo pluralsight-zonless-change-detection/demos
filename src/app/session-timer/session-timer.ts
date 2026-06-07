@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component, computed, DestroyRef, inject, signal } from '@angular/core';
+import { Component, computed, DestroyRef, inject, signal } from '@angular/core';
 
 @Component({
   selector: 'app-session-timer',
   templateUrl: './session-timer.html',
   styleUrls: ['./session-timer.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SessionTimerComponent {
     readonly total = 15;

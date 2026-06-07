@@ -1,5 +1,5 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { distinctUntilChanged, map } from 'rxjs';
 import { ProductLarge, PRODUCTS_LARGE, PRODUCTS_SMALL, ProductSmall } from './products.data';
@@ -10,7 +10,6 @@ type Layout = 'handset' | 'web';
     selector: 'app-products',
     templateUrl: './products.html',
     styleUrl: './products.scss',
-    changeDetection: ChangeDetectionStrategy.OnPush,
     // imports: [AsyncPipe] // 2.
 })
 export class ProductsComponent {

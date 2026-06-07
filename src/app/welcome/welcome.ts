@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, effect, inject, InjectionToken, Injector, viewChild, ViewContainerRef } from '@angular/core';
+import { Component, effect, inject, InjectionToken, Injector, viewChild, ViewContainerRef } from '@angular/core';
 import { MessageComponent } from './message/message';
 
 export const WELCOME_MESSAGE = new InjectionToken<string>('welcomeMessage');
@@ -7,7 +7,6 @@ export const WELCOME_MESSAGE = new InjectionToken<string>('welcomeMessage');
     selector: 'app-welcome',
     templateUrl: './welcome.html',
     styleUrls: ['./welcome.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class WelcomeComponent {
     private container = viewChild.required('container', { read: ViewContainerRef });

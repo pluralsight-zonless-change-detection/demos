@@ -1,11 +1,10 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Product } from '../product-details-data';
 
 @Component({
     selector: 'app-product-card',
     templateUrl: './product-card.html',
     styleUrls: ['./product-card.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductCardComponent {
     // product?: Product; // 1. Before
